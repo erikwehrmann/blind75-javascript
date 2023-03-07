@@ -1,9 +1,9 @@
 function maxSubArray(nums) {
   let max = nums[0];
-  let tsum = nums[0];
+  let csum = nums[0];
   for (let i = 1; i < nums.length; i++) {
-    tsum = Math.max(tsum + nums[i], nums[i]);
-    max = Math.max(max, tsum);
+    csum = Math.max(csum + nums[i], nums[i]);
+    max = Math.max(max, csum);
   }
   return max;
 }
